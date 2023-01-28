@@ -14,6 +14,7 @@
 html, body {
   font-size: 100%;
   position: relative;
+  height: 100%;
 }
 
 body {
@@ -42,11 +43,11 @@ iframe {
 }
 
 #root,
-App {
+.App {
   height: 100%;
 }
 
-bg-image {
+.bg-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
