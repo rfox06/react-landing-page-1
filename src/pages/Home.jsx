@@ -34,7 +34,7 @@ const Home = () => {
                 {({ isActive }) => <Welcome isActive={isActive}/>}
             </SwiperSlide>
             <SwiperSlide>
-                slide 1
+            {({ isActive }) => <Champion isActive={isActive}/>}
             </SwiperSlide>
         </Swiper>
     </>
