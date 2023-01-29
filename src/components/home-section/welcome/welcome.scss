@@ -28,12 +28,16 @@
     }
 
     &__img {
-        @include flex(flex-start, flex-start);
+        @include flex(flex-end, flex-start);
 
         &__slide {
             height: 915px;
-            width: 915;
+            width: 915px;
             overflow: hidden;
+
+            canvas {
+                display: block;
+            }
         }
     }
 }

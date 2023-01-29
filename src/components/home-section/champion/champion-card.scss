@@ -64,17 +64,16 @@
             background-color: rgba($color: #000000, $alpha: 0.6);
 
         }
-
-        .name {
-            height: max-content;
-            bottom: 4px;
-            width: calc(70% - 8px);
-            text-align: center;
-            padding: 1rem 0;
-            background-color: rgba($color: #000000, $alpha: .6);
-            text-transform: uppercase;
-            font-size: 1.5rem;
-        }
+    }
+    .name {
+        height: max-content;
+        bottom: 4px;
+        width: calc(70% - 8px);
+        text-align: center;
+        padding: 1rem 0;
+        background-color: rgba($color: #000000, $alpha: .6);
+        text-transform: uppercase;
+        font-size: 1.5rem;
     }
 }
 @keyframes rotate {

@@ -8,13 +8,13 @@ import hoverEffect from 'hover-effect'
 
 import {
   bg1,
+  champGaren,
   champAhri,
   champAshe,
-  champGaren,
   distortion
 } from '../../../assets/images'
 
-const champImgs = [champAhri, champAshe, champGaren]
+const champImgs = [champGaren, champAhri, champAshe]
 
 const Welcome = props => {
 
@@ -43,8 +43,8 @@ const Welcome = props => {
 
       if (!document.hidden) {
         animates[prevItem].next()
-
       }
+      
       setTimeout(() => {
         let canvas = document.querySelectorAll('#welcome__img__slide > canvas')
         document.querySelector('#welcome__img__slide').appendChild(canvas[0])
@@ -52,7 +52,7 @@ const Welcome = props => {
       }, 3000);
     }
 
-    setInterval(autoImageSlide, 4000);
+    setInterval(autoImageSlide, 3000);
   }, [])
   
 
@@ -79,11 +79,11 @@ const Welcome = props => {
         </div>
       </div>
       <div className="welcome__img relative">
-        <div className="welcome__img__slide" id='welcome__img__slide'>
+        <div className="welcome__img__slide" id="welcome__img__slide">
           {
-            champImgs.map((item, index) => {
+            champImgs.map((item, index) => (
               <img src={item} key={index} />
-            })
+            ))
           }
         </div>
       </div>
