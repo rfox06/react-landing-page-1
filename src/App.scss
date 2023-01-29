@@ -11,7 +11,8 @@
   user-select: none;
 }
 
-html, body {
+html, 
+body {
   font-size: 100%;
   position: relative;
   height: 100%;
@@ -55,6 +56,7 @@ iframe {
 
 .overlay {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -99,7 +101,8 @@ iframe {
   position: relative;
 }
 
-.swiper, .swiper-slide {
+.swiper, 
+.swiper-slide {
   height: 100%;
   
 }
