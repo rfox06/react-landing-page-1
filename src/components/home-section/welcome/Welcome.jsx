@@ -22,7 +22,7 @@ const Welcome = props => {
     const welcomeImgs = document.querySelectorAll('#welcome__img__slide > img')
     let animates = []
     welcomeImgs.forEach((item, index) => {
-      let nextImg = welcomeImgs[index === welcomeImgs.length - 1 ? 0 : index +1].getAttribute('src')
+      let nextImg = welcomeImgs[index === welcomeImgs.length - 1 ? 0 : index + 1].getAttribute('src')
       let animation = new hoverEffect({
         parent: document.querySelector('#welcome__img__slide'),
         intensity: 0.6,
@@ -41,7 +41,7 @@ const Welcome = props => {
       let prevItem = currItem
       currItem = (currItem + 1) % animates.length
 
-      if (!document.hidde) {
+      if (!document.hidden) {
         animates[prevItem].next()
 
       }
