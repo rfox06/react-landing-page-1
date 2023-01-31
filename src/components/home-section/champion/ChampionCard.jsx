@@ -17,7 +17,7 @@ const ChampionCard = props => {
     newNode.style.position = 'absolute'
     newNode.style.top = pos.top + 'px'
     newNode.style.left = pos.left + 'px'
-    newNode.style.zindex = '102'
+    newNode.style.zIndex = '102'
 
     newNode.style.transition = 'all 0.7s ease'
     newNode.id = `champ-img-${props.id}`
@@ -27,7 +27,7 @@ const ChampionCard = props => {
       newNode.style.height = '100%'
       newNode.style.top = 0
       newNode.style.left = 0
-    })
+    },)
 
     document.body.appendChild(newNode)
 
@@ -38,7 +38,7 @@ const ChampionCard = props => {
   }
 
   return (
-    <div className='champion-card' onClick={onClick} ref={cardRef}>
+    <div className="champion-card" onClick={onClick} ref={cardRef}>
         <div className="frame">
             <div className="bg-image overlay bg" style={{backgroundImage: `url(${item.bg})`}}></div>
         </div>

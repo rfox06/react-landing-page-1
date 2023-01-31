@@ -37,7 +37,8 @@
             position: relative;
             pointer-events: visible;
 
-            &::before, &::after {
+            &::before, 
+            &::after {
                 content: "";
                 position: absolute;
                 height: 2px;
